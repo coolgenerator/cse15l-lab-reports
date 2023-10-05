@@ -6,3 +6,4 @@ For each of the commands `cd`, `ls`, and `cat`, and using the workspace you crea
 
 ## Results
 My working directory is `/home/lecture1`
+![Image](filesystem.png)
