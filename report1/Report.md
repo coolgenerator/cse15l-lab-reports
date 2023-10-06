@@ -1,4 +1,5 @@
 # Lab Report 1 - Remote Access and FileSystem (Week 1)
+
 ## Requirements
 For each of the commands `cd`, `ls`, and `cat`, and using the workspace you created in this lab:
 + Share an example of using the command with no arguments.
@@ -13,6 +14,7 @@ For each, include:
 
 ## Results
 ![Image](filesystem.png)
+
 ### For commands with no arguments
 My initial working directory was `/home/lecture1`
 
@@ -40,6 +42,7 @@ When I used `ls` commend followed with the `lecture1` directory, the output disp
 After executing the above command, my working directory is still `/home/lecture1`
 
 When I used `cat` commend followed with the `lecture1` directory, it displayed 'cat: messages/: Is a directory'. This is an error that the `cat` command should not followed by a directory path.
+
 
 ### For commands with a path to a file as an argument
 My initial working directory was `/home/lecture1`
