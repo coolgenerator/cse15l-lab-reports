@@ -16,44 +16,44 @@ For each, include:
 ![Image](filesystem.png)
 
 ### For commands with no arguments
-My initial working directory was `/home/lecture1`
+My initial working directory is `/home/lecture1`
 
-When I used `cd` commend with no arguments, the working directory changed to the home directory. There is no output by executing this command.
+When I use `cd` command with no arguments, the working directory changes to the home directory. There is no output by executing this command.
 
-After executing the above command, my working directory changed to `/home`
+After executing the above command, my working directory changes to `/home`
 
-When I used `ls` commend with no arguments, the output displayed all the files under `/home` directory. In my case, there is a file in blue, so I know there is a **lecture** directory under my home directory.
+When I use `ls` command with no arguments, the output display all the files under `/home` directory. In my case, there is a file in blue, so I know there is a **lecture** directory under my home directory.
 
-After executing the above command, my working directory is still `/home`
+After executing the above command, my working directory remains `/home`
 
-When I used `cat` commend with no arguments, it started with a new line. There is no output in this case. I googled it, it says it will wait for your input from the keyboard until it receives an end-of-file signal. So I tried it one more time, it repeated what I typed in in a new line when I end with a return button, and repeated my input in the same line once after I type 'Ctrl + D'
+When I used `cat` commend with no arguments, it starts with a new line. There is no output in this case. It says it will wait for your input from the keyboard until it receives an end-of-file signal. So I try the command again, and type in a series of test sentences. It repeats what I typed in and starts with a new line when I end with a return button, and repeats my input in the same line after I type 'Ctrl + D'
 
 ![cat](cat_command.png)
 
 ### For commands with a path to a directory as an argument
-My initial working directory was `/home`
+My initial working directory is `/home`
 
-When I used `cd` commend followed with the `lecture1` directory, the working directory changed to `/home/lecture1`. There is no output by executing this command.
+When I use `cd` command follow with the `lecture1` directory, the working directory change to `/home/lecture1`. There is no output by executing this command.
 
-After executing the above command, my working directory changed to `/home/lecture1`
+After executing the above command, my working directory changes to `/home/lecture1`
 
-When I used `ls` commend followed with the `lecture1` directory, the output displayed all the files under `/home/lecture1` directory. There are four files under the `lecture1` directory.
+When I use `ls` command follow with the `lecture1` directory, the output displayed all the files under `/home/lecture1` directory. There are four files under the `lecture1` directory.
 
 After executing the above command, my working directory is still `/home/lecture1`
 
-When I used `cat` commend followed with the `lecture1` directory, it displayed 'cat: messages/: Is a directory'. This is an error that the `cat` command should not followed by a directory path.
+When I use `cat` command follow with the `lecture1` directory, it displays 'cat: messages/: Is a directory'. This is an error that the `cat` command should not follow by a directory path.
 
 
 ### For commands with a path to a file as an argument
 My initial working directory was `/home/lecture1`
 
-When I used `cd` commend followed with the `Hello.java` file, it displayed 'bash: cd: Hello.java: Not a directory'. This is an error that the `cat` command should not followed by a file path.
+When I use `cd` command follow with the `Hello.java` file, it displays 'bash: cd: Hello.java: Not a directory'. This is an error that the `cat` command should not follow by a file path.
 
 After executing the above command, my working directory remains `/home/lecture1`
 
-When I used `ls` commend followed with the `Hello.java` file, the output displayed the file name 'Hello.java'.
+When I use `ls` command follow with the `Hello.java` file, the output displays the file name 'Hello.java'.
 
 After executing the above command, my working directory remains `/home/lecture1`
 
-When I used `cat` commend followed with the `Hello.java` file, it displayed all the file content in 'Hello.java' file. There was no error displayed.
+When I use `cat` command follow with the `Hello.java` file, it displays all the file content in 'Hello.java' file. There is no error displayed.
 
