@@ -12,12 +12,19 @@ For each, include:
 + Indicate whether the output is an error or not, and if it’s an error, explain why it’s an error.
 
 ## Results
+![Image](filesystem.png)
 ### For commands with no arguments
-My initial working directory is `/home/lecture1` \
+My initial working directory was `/home/lecture1` \
 When I use `cd` commend with no arguments, the working directory changed to the home directory. There is no output by executing this command. \
 After executing the above command, my working directory changed to `/home` \
 When I use `ls` commend with no arguments, the output displays all the files under `/home` directory. In my case, there is a file in blue, so I know there is a **lecture** directory under my home directory. \
 After executing the above command, my working directory is still `/home` \
-When I use `cat` commend with no arguments, it started with a new line. There is no output in this case. 
+When I use `cat` commend with no arguments, it started with a new line. There is no output in this case. I googled it, it says it will wait for your input from the keyboard until it receives an end-of-file signal. So I tried it one more time, it repeated what I typed in in a new line when I end with a return button, and repeated my input in the same line once after I type 'Ctrl + D' \
+![cat](cat_command.png)
+### For commands with a path to a directory as an argument
+My initial working directory was `/home` \
+When I use `cd` commend followed by a directory path, 
 
-![Image](filesystem.png)
+### For commands with a path to a file as an argument
+
+
