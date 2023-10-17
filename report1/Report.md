@@ -18,13 +18,13 @@ For each, include:
 ![Image](cd_with_no_argument.png)
 My initial working directory is `/home/lecture1`
 
-When I use `cd` command with no arguments, the working directory changes to the home directory. There is no error and no output by executing this command.
+When I use `cd` command with no arguments, the working directory changes to the home directory. There is no error occured and no output by executing this command.
 
 #### ls
 ![Image](ls_with_no_argument.png)
 My working directory is `/home`
 
-When I use `ls` command with no arguments, the output display all the files under `/home` directory. This is no error. In my case, there is a file in blue, so I know there is a **lecture** directory under my home directory.
+When I use `ls` command with no arguments, the output display all the files under `/home` directory. This is no error occured. In my case, there is a file in blue, so I know there is a **lecture** directory under my home directory.
 
 #### cat
 ![Image](cat_with_no_argument.png)
@@ -37,19 +37,19 @@ When I used `cat` commend with no arguments, it starts with a new line. There is
 ![Image](cd_with_a_path_to_directory.png)
 My initial working directory is `/home`
 
-When I use `cd` command follow with the `lecture1` directory, the working directory change to `/home/lecture1`. There is no error and no output by executing this command.
+When I use `cd` command follow with the `lecture1` directory, the working directory change to `/home/lecture1`. There is no error occured and no output by executing this command.
 
 #### ls
 ![Image](ls_with_a_path_to_directory.png)
-My working directory is `/home/lecture1`
+My working directory is `/home`
 
-When I use `ls` command follow with the `lecture1` directory, the output displayed all the files under `/home/lecture1` directory. There is no error, and there are four files under the `lecture1` directory.
+When I use `ls` command follow with the `lecture1` directory, the output displayed all the files under `/home/lecture1` directory. There is no error occured, and there are four files under the `lecture1` directory.
 
 #### cat
 ![Image](cat_with_a_path_to_directory.png)
-My working directory is `/home/lecture1`
+My working directory is `/home`
 
-When I use `cat` command follow with the `lecture1` directory, it displays 'cat: messages/: Is a directory'. This is an error that the `cat` command should not follow by a directory path.
+When I use `cat` command follow with the `lecture1` directory, it displays `cat: lecture1/: Is a directory`. It occurs an error that the `cat` command should not follow by a directory path.
 
 
 ### For commands with a path to a file as an argument
@@ -57,7 +57,7 @@ When I use `cat` command follow with the `lecture1` directory, it displays 'cat:
 ![Image](cd_with_a_path_to_file.png)
 My initial working directory is `/home/lecture1`
 
-When I use `cd` command follow with the `Hello.java` file, it displays 'bash: cd: Hello.java: Not a directory'. This is an error that the `cat` command should not follow by a file path.
+When I use `cd` command follow with the `Hello.java` file, it displays 'bash: cd: Hello.java: Not a directory'. It occurs an error that the `cat` command should not follow by a file path.
 
 #### ls
 ![Image](ls_with_a_path_to_file.png)
@@ -69,5 +69,5 @@ When I use `ls` command follow with the `Hello.java` file, the output displays t
 ![Image](cat_with_a_path_to_file.png)
 My working directory is `/home/lecture1`
 
-When I use `cat` command follow with the `Hello.java` file, it displays all the file content in 'Hello.java' file. There is no error displayed.
+When I use `cat` command follow with the `Hello.java` file, it displays all the file content in 'Hello.java' file. There is no error occured.
 
