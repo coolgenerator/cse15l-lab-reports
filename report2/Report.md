@@ -10,26 +10,19 @@ class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
-    ArrayList<String> stringList = new ArrayList<>();
-
-    String convertListToString(ArrayList<String> list){
-        // Convert List to string in the format of "1. Hello"
-        String res;
-        for(int i = 1; i <= list.length; ++i)
-            res += i + ". " + list(i-1) + "\n";
-        return res;
-    }
+    // Initialize the response string
+    String resString = "";
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
-            return convertListToString(this.stringList);
+            return this.resString;
         } else if (url.getPath().equals("/add-message")) {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")){
-                stringList.add(parameters[1].toString);
+                num += 1;
+                this.resString += this.num + ". " + parameters[1].toString() + "\n";
             }
-            
-            return convertListToString(this.stringList);
+            return resString;
         } else {
             return "404 Not Found!";
         }
@@ -51,7 +44,7 @@ class StringServer {
 ```
 ### Result
 ![Image](message_2.png)
-It calls `main(String[])` function, then `handleRequest(URL)` method is called, and then `convertListToString(ArrayList<String>)`.
+The function `handleRequest(URL)` is called when executing the url `https://127.0.0.1:4000/add-message?s=How%20are%20you`
 
 Arguments, values and changes:
 
@@ -60,17 +53,29 @@ Arguments, values and changes:
 + Argument: url
 + Value: `new URI("https://127.0.0.1:4000/add-message?s=How%20are%20you")`
 + Change(s): 
-
-`convertListToString(ArrayList<String>)`
-
-+ Argument: list
-+ Value: `["Hello", "How are you"]`
+  The variable `num` is changed from 1 to 2
+  The variable `resString` is changed from `1. Hello\n` to `1. Hello\n2. How are you\n`
 
 ![Image](message_4.png)
-It calls `main(String[])` function, then `handleRequest(URL)` method is called, and then `convertListToString(ArrayList<String>)`.
+The function `handleRequest(URL)` is called when executing the url `https://127.0.0.1:4000/add-message?s=http:google.com`
 
-The request url `https://127.0.0.1:4000/add-message?s=http://google.com` is passed to `handleRequest()` method. And the Arraylist `["Hello", "How are you", "666", "http://google.com"]` is passed to `convertListToString()` method.
+Arguments, values and changes:
+
+`handleRequest(URI)`
+
++ Argument: url
++ Value: `new URI("https://127.0.0.1:4000/add-message?s=http://google.com")`
++ Change(s): 
+  The variable `num` is changed from 3 to 4 
+  The variable `resString` is changed from `1. Hello\n2. How are you\n3. 666` to `1. Hello\n2. How are you\n3. 666\n4. http://google.com`
 
 ## Part 2
+The path to the private key for your SSH key for logging into `ieng6`
+![Image](private_key_path.png)
+The path to the public key for your SSH key for logging into `ieng6`
+![Image](public_key_path.png)
+A terminal interaction where you log into ieng6 with your course-specific account without being asked for a password.
+![Image](ssh_screenshot.png)
 
 ## Part 3
+It is real cool to save the private key on my own computer and public key on the remote computer to skip the step of tying in password everytime. I didn't know this before, this can save us time when login.
