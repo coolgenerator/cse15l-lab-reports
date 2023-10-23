@@ -52,12 +52,14 @@ Arguments, values and changes:
 
 + Argument: url
 + Value: `new URI("https://127.0.0.1:4000/add-message?s=How%20are%20you")`
-+ Change(s): 
++ Change(s):
+
   The variable `num` is changed from 1 to 2
+  
   The variable `resString` is changed from `1. Hello\n` to `1. Hello\n2. How are you\n`
 
 ![Image](message_4.png)
-The function `handleRequest(URL)` is called when executing the url `https://127.0.0.1:4000/add-message?s=http:google.com`
+The function `handleRequest(URL)` is called when executing the url `https://127.0.0.1:4000/add-message?s=http://google.com`
 
 Arguments, values and changes:
 
@@ -65,8 +67,10 @@ Arguments, values and changes:
 
 + Argument: url
 + Value: `new URI("https://127.0.0.1:4000/add-message?s=http://google.com")`
-+ Change(s): 
-  The variable `num` is changed from 3 to 4 
++ Change(s):
+
+  The variable `num` is changed from 3 to 4
+  
   The variable `resString` is changed from `1. Hello\n2. How are you\n3. 666` to `1. Hello\n2. How are you\n3. 666\n4. http://google.com`
 
 ## Part 2
