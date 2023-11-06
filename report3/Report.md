@@ -96,6 +96,7 @@ Both two of the functions overwrote original data and cause the loss of data. Us
 
 ## Part 2 - Researching Commands
 1. `grep -i` --ignore-case: Ignores case distinctions in patterns and input data.
+
 **Input**
 ```
 grep -i "Waddington" journal.pbio.0020019.txt
@@ -121,6 +122,7 @@ The Pentagon Teleconferences. Inside the National Military Command Center, the d
 ```
 It is convenient to find all the lower case and upper case words in the long context.
 2. `grep -n` --line-number: Prefix each line of the matching output with the line number in the input file.
+
 **Input**
 ```
 grep -n "Tuesday" chapter-1.txt
@@ -221,6 +223,7 @@ grep -ni "wtc" chapter-9.txt
 ```
 `grep -ni` command can match case insensitive patterns and locate their lines.
 3. `grep -w` Find the exact matching word from the input file or string.
+
 **Input**
 ```
 grep -w "prepare" chapter-9.txt
@@ -250,6 +253,7 @@ grep -wi "how" chapter-13.1.txt
 ```
 Find all the word only and case insensitive.
 4. `grep -c` Count the number of occurrences of the provided pattern.
+
 **Input**
 ```
 grep -c "Portland" chapter-1.txt 
