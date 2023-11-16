@@ -6,4 +6,5 @@ Here is a table of content of all the lab reports:
 + [Report 1](report1/Report.html)
 + [Report 2](report2/Report.html)
 + [Report 3](report3/Report.html)
++ [Report 4](report4/Report.html)
 
