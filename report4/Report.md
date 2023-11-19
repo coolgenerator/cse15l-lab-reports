@@ -10,7 +10,8 @@ I use `ssh <myUserID>@ieng6.ucsd.edu` command to access to my account, and press
 ### 2. Clone my fork of the repository from my Github account (using the SSH URL)
 ![Image](5-ssh_clone.png)
 
-**Preparation**
+**Preparation:**
+
 Firstly, I use `ssh-keygen<enter>` command to create a private SSH Key file on ieng6 for accessing Github. It will show the “randomart image”
 
 Secondly, I type in `cat <path of your ssh key .pub file><enter>` to look up my SSH public key. I copy the public key to my clipboard.
@@ -19,7 +20,8 @@ After that, I log in to my github account, and then find `Settings > Access > SS
 
 Then I come back to ieng6 sever, and type in `ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts<enter>`, it will add Github.com as a recognized host.
 
-**Run the command**
+**Run the command:**
+
 After all the preparations are completed, I use SSH clone URL this time, and run the command `git clone git@github.com:coolgenerator/lab7.git<enter>` on the ieng6 sever. 
 
 The SSH clone method will allow both cloning and pushing to the repository.
